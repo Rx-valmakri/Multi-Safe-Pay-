@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="payment_provider_multisafepay" model="payment.provider">
+        <field name="code">multisafepay</field>
+        <field name="name">Multi Safe Pay</field>
+        <field name="image_128" type="base64" file="payment_multisafepay/static/description/multisafepay.png"/>
+        <field name="module_id" ref="base.module_payment_multisafepay"/>
+        <field name="payment_method_ids"
+               eval="[Command.set([ref('payment_multisafepay.payment_method_multisafepay')])]"/>
+        <field name="redirect_form_view_id" ref="redirect_form"/>
+    </record>
+</odoo>

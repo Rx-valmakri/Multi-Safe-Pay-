@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record id="payment_method_multisafepay" model="payment.method">
+        <field name="name">MultiSafePay</field>
+        <field name="code">multisafepay</field>
+        <field name="sequence">1001</field>
+        <field name="active">False</field>
+        <field name="image" type="base64" file="payment_multisafepay/static/description/multisafepay.png"/>
+        <field name="support_tokenization">False</field>
+        <field name="support_express_checkout">False</field>
+        <field name="support_refund">partial</field>
+    </record>
+</odoo>
